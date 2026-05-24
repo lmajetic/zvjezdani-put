@@ -49,12 +49,12 @@ const gameStore = useGameStore()
 
 // Svi predmeti (slike moraju biti u /public/animals/ i /public/objects/)
 const allItems = [
-  { name: 'Pas', image: '/animals/dog.jpg', isAnimal: true },
-  { name: 'Auto', image: '/objects/car.jpg', isAnimal: false },
-  { name: 'Mačka', image: '/animals/cat.jpg', isAnimal: true },
-  { name: 'Kuća', image: '/objects/house.jpg', isAnimal: false },
-  { name: 'Lopta', image: '/objects/ball.jpg', isAnimal: false },
-  { name: 'Ptica', image: '/animals/bird.jpg', isAnimal: true }
+  { name: 'Pas', image: 'animals/dog.jpg', isAnimal: true },
+  { name: 'Auto', image: 'objects/car.jpg', isAnimal: false },
+  { name: 'Mačka', image: 'animals/cat.jpg', isAnimal: true },
+  { name: 'Kuća', image: 'objects/house.jpg', isAnimal: false },
+  { name: 'Lopta', image: 'objects/ball.jpg', isAnimal: false },
+  { name: 'Ptica', image: 'animals/bird.jpg', isAnimal: true }
 ]
 
 // Brzina izmjene ovisno o razini

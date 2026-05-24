@@ -74,12 +74,12 @@ const gameStore = useGameStore()
 
 // Svi mogući predmeti (slike u /public/animals/)
 const allItemsList = [
-  { id: 1, name: 'Pas', image: '/animals/dog.jpg' },
-  { id: 2, name: 'Mačka', image: '/animals/cat.jpg' },
-  { id: 3, name: 'Ptica', image: '/animals/bird.jpg' },
-  { id: 4, name: 'Riba', image: '/animals/fish.jpg' },
-  { id: 5, name: 'Zec', image: '/animals/rabbit.jpg' },
-  { id: 6, name: 'Kornjača', image: '/animals/turtle.jpg' }
+  { id: 1, name: 'Pas', image: 'animals/dog.jpg' },
+  { id: 2, name: 'Mačka', image: 'animals/cat.jpg' },
+  { id: 3, name: 'Ptica', image: 'animals/bird.jpg' },
+  { id: 4, name: 'Riba', image: 'animals/fish.jpg' },
+  { id: 5, name: 'Zec', image: 'animals/rabbit.jpg' },
+  { id: 6, name: 'Kornjača', image: 'animals/turtle.jpg' }
 ]
 
 // Parametri ovisni o razini

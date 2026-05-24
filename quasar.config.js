@@ -45,6 +45,9 @@ export default defineConfig((/* ctx */) => {
       // rebuildCache: true, // rebuilds Vite/linter/etc cache on startup
 
       publicPath: '/zvjezdani-put/',
+      html: {
+        base: '/zvjezdani-put/'
+      },
       // analyze: true,
       // env: {},
       // rawDefine: {}
