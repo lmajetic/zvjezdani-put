@@ -3,7 +3,7 @@
     <div class="text-center q-mb-xl">
       <q-img
         src="~assets/stars-logo.svg"
-        width="100%"
+        width="70%"
         v-if="true"
       />
       <div class="text-h3 q-mt-md">Zvjezdani Put</div>
@@ -49,3 +49,21 @@ const startGame = (level) => {
   router.push('/games') // vodi na izbor igara
 }
 </script>
+
+<style scoped>
+.index-page {
+  background: linear-gradient(135deg, #e3f2fd 0%, #f5f5f5 100%);
+}
+
+.main-title {
+  font-size: clamp(2.5rem, 8vw, 5rem);
+  font-weight: bold;
+  color: #1976d2;
+  margin: 1vh 0;
+}
+
+.level-btn {
+  font-size: clamp(1.2rem, 3vw, 2.5rem);
+  padding: 1vh 0;
+}
+</style>

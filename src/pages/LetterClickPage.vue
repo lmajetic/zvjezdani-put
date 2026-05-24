@@ -115,28 +115,31 @@ onMounted(() => {
 </script>
 
 <style scoped>
-.letter-page {
-  background-color: #f5f5f5; /* svijetla pozadina, visoki kontrast */
+.react-page {
+  background-color: #f5f5f5;
 }
 
-.target-letter-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 10px;
-}
-
-.target-letter {
-  font-size: 7rem;
+.item-name {
+  font-size: clamp(2rem, 5vw, 4rem);
   font-weight: bold;
-  color: #1976d2; /* primarna plava */
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
-  animation: letterPulse 2s infinite;
 }
 
-@keyframes letterPulse {
-  0% { transform: scale(1); }
-  50% { transform: scale(1.1); }
-  100% { transform: scale(1); }
+.react-btn {
+  font-size: clamp(1.5rem, 4vw, 3rem);
+  min-width: 40vw;
+  min-height: 10vh;
+  margin-top: 2vh;
+  transition: background-color 0.3s, transform 0.1s;
+}
+.react-btn:active {
+  transform: scale(0.96);
+}
+
+/* Prebrisati fiksnu širinu slike, sad koristi .game-img */
+.current-item .q-img {
+  width: auto;
+  height: auto;
+  max-width: 40vw;
+  max-height: 30vh;
 }
 </style>

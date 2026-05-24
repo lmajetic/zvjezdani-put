@@ -169,7 +169,8 @@ const goToGames = () => {
 <style scoped>
 .results-page {
   position: relative;
-  overflow: hidden; /* da konfeti ne stvaraju scrollbar */
+  overflow: hidden;
+  background: linear-gradient(135deg, #e8f5e9 0%, #f5f5f5 100%);
 }
 
 .confetti-canvas {
@@ -178,14 +179,34 @@ const goToGames = () => {
   left: 0;
   width: 100%;
   height: 100%;
-  pointer-events: none; /* klikovi prolaze kroz canvas */
-  z-index: 1000; /* iznad sadržaja ali ne ometa interakciju */
+  pointer-events: none;
+  z-index: 1000;
 }
 
 .big-star {
   animation: pulse 1.5s infinite;
-  z-index: 1; /* osigurava da je ispred canvas-a? Canvas je pointer-events:none pa nije bitno, ali bolje dodati */
+  z-index: 1;
 }
+
+.congrats-text {
+  font-size: clamp(3rem, 8vw, 6rem);
+  font-weight: bold;
+  color: #1976d2;
+  margin-top: 2vh;
+}
+
+.sub-text {
+  font-size: clamp(1.5rem, 4vw, 3rem);
+  margin-top: 1vh;
+  text-align: center;
+}
+
+.result-btn {
+  font-size: clamp(1.2rem, 3vw, 2.5rem);
+  min-width: 40vw;
+  padding: 2vh 0;
+}
+
 @keyframes pulse {
   0% { transform: scale(1); }
   50% { transform: scale(1.1); }

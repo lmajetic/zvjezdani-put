@@ -150,21 +150,47 @@ onMounted(() => {
 </script>
 
 <style scoped>
+.missing-page {
+  background-color: #f5f5f5;
+}
+
+.phase-title {
+  font-size: clamp(2rem, 5vw, 4rem);
+  margin-bottom: 2vh;
+}
+
+.memory-row {
+  flex-wrap: wrap;
+  max-width: 90vw;
+}
+
 .memory-item {
   transition: transform 0.3s;
 }
-.missing-slot {
-  opacity: 0.6;
+
+.item-label {
+  font-size: clamp(1.2rem, 3vw, 2.5rem);
+  margin-top: 1vh;
 }
+
+.timer-text {
+  font-size: clamp(1rem, 2.5vw, 2rem);
+  margin-top: 2vh;
+}
+
 .question-mark {
-  width: 150px;
-  height: 150px;
+  width: clamp(80px, 20vw, 150px);
+  height: clamp(80px, 20vw, 150px);
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 5rem;
+  font-size: clamp(3rem, 8vw, 6rem);
   background: #eee;
   border-radius: 20px;
   border: 3px dashed #999;
+}
+
+.missing-slot {
+  opacity: 0.6;
 }
 </style>
