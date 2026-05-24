@@ -46,10 +46,14 @@
 <script setup>
 import { useRouter } from 'vue-router'
 import AudioButton from 'components/AudioButton.vue'
+import { useGameStore } from 'src/stores/gameStore'
 
 const router = useRouter()
+const gameStore = useGameStore()
+
 
 const goToGame = (routeName) => {
+  gameStore.resetStars()      // <-- dodaj ovo
   router.push({ name: routeName })
 }
 </script>

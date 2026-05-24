@@ -1,10 +1,9 @@
-// src/stores/gameStore.js
 import { defineStore } from 'pinia'
 import { ref, computed } from 'vue'
 
 export const useGameStore = defineStore('game', () => {
   const stars = ref(0)
-  const level = ref('easy') // 'easy' ili 'hard'
+  const level = ref('easy')        // 'easy' ili 'hard'
   const currentGame = ref(null)
 
   const maxStars = computed(() => 5)
